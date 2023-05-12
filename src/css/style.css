@@ -1,0 +1,371 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* CABEÇALHO */
+
+header {
+text-align: center;
+padding: 15px;
+font-weight: 600;
+background: #ffffff;
+box-shadow: 0px 4px 40px -20px rgba(0, 0, 0, 0.25);
+}
+
+/* MAIN - PARTE PRINCIPAL */
+
+main {
+margin: 0 70px;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* FILTROS */
+
+.filtersContainer {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 30px 0;
+}
+
+#botoesContainer {
+display: flex;
+}
+
+.estiloGeralBotoes {
+border: 1.5px solid rgba(18, 184, 134, 0.05);
+background: rgba(18, 184, 134, 0.05);
+border-radius: 8px;
+padding: 10px 20px;
+cursor: pointer;
+font-weight: 500;
+color: #12b886;
+font-size: 0.9rem;
+margin-right: 10px;
+}
+
+.estiloGeralBotoes--filter:hover {
+background-color: #12b886;
+color: #ffffff;
+transition: ease-in-out 0.2s;
+}
+
+.botoesClickStyle {
+background-color: #12b886;
+color: #ffffff;
+}
+
+.containerBuscaPorNome {
+display: flex;
+justify-content: space-between;
+}
+
+.campoBuscaPorNome {
+border: none;
+padding: 0 10px;
+background: #f1f3f5;
+border-radius: 8px;
+margin-right: 5px;
+width: 250px;
+color: #515252;
+font-weight: 400;
+}
+
+.estiloGeralBotoes--botaoBuscaPorNome {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 15px;
+gap: 10px;
+background: #12b886;
+border: 1.5px solid #12b886;
+border-radius: 8px;
+}
+/*CONTAINER VITRINE*/
+
+.containerVitrine {
+display: flex;
+width: 100%;
+justify-content: space-evenly;
+border-radius: 50px 0;
+}
+
+/* CONTAINER DE PRODUTOS */
+
+.containerListaProdutos {
+width: 100%;
+}
+
+.containerListaProdutos ul {
+list-style: none;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin-top: 40px;
+width: 90%;
+}
+
+.containerListaProdutos ul li {
+border-radius: 8px;
+transition: ease-in-out 0.1s;
+width: calc(95% / 4);
+margin-bottom: 30px;
+}
+
+.containerListaProdutos ul li:hover {
+box-shadow: 3px 3px 13px 1px rgb(146 146 146);
+}
+
+.containerListaProdutos ul li img {
+width: 100%;
+}
+
+.containerListaProdutos ul li h3 {
+font-size: 1rem;
+font-weight: 500;
+margin: 10px 0 7px;
+color: #212529;
+}
+.containerListaProdutos ul li span {
+    font-size: 0.8rem;
+    font-weight: 500;
+    display: inline-block;
+    color: #868e96;
+}
+.containerListaProdutos ul li p {
+font-size: 12px;
+color: #212529;
+font-weight: 500;
+margin: 10px 0;
+}
+.containerListaProdutos ul li ol {
+list-style: decimal;
+color: #868e96;
+font-size: 12px;
+margin-left: 15px;
+}
+.containerListaProdutos ul li ol li {
+margin: 0;
+width: 100%;
+}
+.containerListaProdutos ul li button {
+background-color: #12b8860d;
+border-radius: 8px;
+border: #12b8860d 1px solid;
+color: #12b886;
+padding: 5px;
+transition: 0.5s;
+margin: 0px 0 0 65%;
+cursor: pointer;
+}
+.containerListaProdutos ul li button:hover {
+background-color: #12b886;
+border: #12b886 1px solid;
+color: white;
+}
+.containerListaProdutos ul li div {
+display: flex;
+justify-content: space-between;
+padding: 5px;
+}
+.containerPrincipal {
+    display: flex;
+}
+
+/* Carrinho */
+
+.cartContainer {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    padding: 10px 20px;
+}
+
+.head {
+    background-color: #12B886;
+    border-radius: 8px 8px 0px 0px;
+    width: 290px;
+    height: 56.29px;
+}
+
+.head img {
+    width: 14px;
+    height: 14px;
+    margin: auto 5px;
+}
+
+.cartContainer > div {
+    display: flex;
+}
+
+.cartContainer > div > p{
+    background-color: #12B886;
+    color: #f1f3f5;
+    padding: 22px 0 0 5px;
+}
+
+
+.cartList {
+    overflow-y: scroll;
+    height: 400px;
+    width: 290px;
+    max-height: 100%;
+    text-align: center;
+}
+
+.cartList::-webkit-scrollbar {
+    display: none;
+}
+
+.cartList > img{
+    padding: 72px 0px 0px 0px;
+}
+
+.cartList > h1 {
+    color: #868E96;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 15px 0 0 0;
+}
+
+.cartList li {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    text-align: left;
+    width: 270px;
+    height: 83px;
+    padding: 20px 0 0 0;
+}
+
+.cartList > li > h3 {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.cartList > li > span {
+    font-weight: 400;
+    font-size: 12px;
+    color: #868E96;
+    padding: 5px 0 0 0;
+}
+
+.cartList > li > p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #212529;
+    padding: 5px 0 5px 0;
+}
+
+.cartList li button {
+    border: none;
+    width: 9px;
+    height: 12px;
+
+}
+
+.cadrImg {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+}
+
+.trash {
+    width: 9px;
+    height: 12px;
+}
+
+.totais {
+    flex-wrap: wrap;
+    width: 290px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #212529;
+}
+
+#quantidade {
+    padding: 20px 90px 10px 10px;
+}
+
+.quantidade {
+    padding: 20px 10px 10px 80px;
+}
+
+#price {
+    padding: 10px 115px 10px 10px;
+}
+
+.price {
+    padding: 10px 10px 10px 80px;
+}
+
+@media (max-width: 500px){
+    .containerPrincipal {
+        flex-direction: column;
+    }
+
+    .filtersContainer {
+        display: flex;
+        overflow-x: scroll;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 0px;
+        flex-wrap: wrap;
+    }
+
+    #botoesContainer {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        padding: 0px 0px 20px 0;
+    }
+
+    .containerBuscaPorNome {
+        width: 50%;
+        padding: 20px 0 0 0;
+    }
+
+    .containerListaProdutos ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-top: 40px;
+        width: 90%;
+        overflow-y: scroll;
+
+    }
+
+    .containerListaProdutos ul li {
+        border-radius: 8px;
+        transition: ease-in-out 0.1s;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 30px;
+    }
+
+    .containerListaProdutos ul li img{
+        width: 274px;
+        height: 175px;
+    }
+
+    .nutriList {
+        display: none;
+    }
+
+    .head {
+        width: 100%;
+    }
+
+    .cartList {
+        overflow-y: scroll;
+        /* overflow-y: hidden; */
+        height: 200px;
+        width: 290px;
+        max-height: 100%;
+    }
+}
